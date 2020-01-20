@@ -1,0 +1,7 @@
+{
+    "prj_root": ".",
+    "lib_path": "./syn",
+    "lib_max": "slow.db",
+    "rtl_path": "./rtl",
+    "rtl_flist": "./rtl/rtl.flist"
+}
