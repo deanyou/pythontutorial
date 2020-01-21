@@ -4,13 +4,8 @@ import json
 from mako.template import Template
 
 # config
-jsonfile = open('syn.json').readlines()
-jsonstr = ''
-for line in jsonfile:
-    jsonstr += line.rstrip()
-print(jsonstr)
-
-cfg = json.loads(jsonstr)
+jsonfile = open('syn.json').read()
+cfg = json.loads(jsonfile)
 print(cfg)
 
 
@@ -23,7 +18,7 @@ lib_max = cfg["lib_max"]
 rtl_path = cfg["rtl_path"]
 rtl_flist = cfg["rtl_flist"]
 
-rtls = open(rtl_flist, 'r').readlines()
+rtls = open(rtl_flist, 'r').read().splitlines()
 print(rtls)
 
 # define template

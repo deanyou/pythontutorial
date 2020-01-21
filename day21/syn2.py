@@ -3,13 +3,8 @@ import os
 import json
 
 # config
-jsonfile = open('syn.json').readlines()
-jsonstr = ''
-for line in jsonfile:
-    jsonstr += line.rstrip()
-print(jsonstr)
-
-cfg = json.loads(jsonstr)
+jsonfile = open('syn.json').read()
+cfg = json.loads(jsonfile)
 print(cfg)
 
 
