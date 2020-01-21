@@ -1,0 +1,15 @@
+
+/*
+  this is synthesis configuration file
+
+  Please json5 lib to handle json with comments:
+  `import json5`
+ */
+
+{
+    "prj_root": ".",
+    "lib_path": "./syn", //this is synthesis library directory
+    "lib_max": "slow.db", //125C, 1.35V
+    "rtl_path": "./rtl",
+    "rtl_flist": "./rtl/rtl.flist" //rtl file list
+}
